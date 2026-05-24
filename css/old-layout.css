@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #171515;
+    /*background-image: url(../pics/background3.png);*/
+    color: white;
+}
+
+#video-box video {
+    height: 90vh;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+    border-bottom: 3px solid red;
+}
+#video-box #video-label {
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    bottom: 20%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 250%;
+    box-shadow: 2px 6px black;
+}
+#video-box #video-label h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+#video-box #video-logo {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+#video-box #video-logo img {
+    width: 100%;
+    height: auto;
+    background-color: rgba(white, white, white, 0.5);
+}
+
+main {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1200px;
+}
+
+main div {
+    margin: 30px;
+    padding: 20px 60px;
+    border: 1px solid red;
+    box-shadow: 3px 5px #200;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    margin: 20px 0;
+}
+h3 {
+    margin: 10px 0;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: red;
+}
+
+nav {
+    width: 100%;
+}
+nav ul h1 {
+    font-family:'Times New Roman', Times, serif;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #222;
+    padding: 10px 0;
+    border-bottom: 5px solid red;
+}
+nav ul li {
+    list-style: none;
+    
+}
+nav li img {
+    margin: auto 50px;
+    height: 150%;
+    width: auto;
+}
+nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #666;
+}
+nav ul li a:hover {
+    background-color: #444;
+    text-decoration: underline;
+}
+
+#auftritte {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+#auftritte h2 {
+    margin-left: 30px;
+}
+table, tr, th, td {
+    border: 3px solid #666;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+}
+#auftritte th, #auftritte td {
+    padding: 8px 30px;
+}
+th {
+    text-decoration: underline;
+}
+#tickets {
+    display: flex;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    /*background-color: #888;*/
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #666;
+}
+#tickets:hover {
+    background-color: #222;
+    text-decoration: underline;
+}
+
+#about section {
+    margin-bottom: 30px;
+    line-height: 15pt;
+}
+
+.mitglied {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    border: none;
+    box-shadow: none;
+}
+.mitglied img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto 0;
+}
+.mitglied h3 {
+    display: block;
+    width: 45px;
+}
+.mitglied p {
+    display: block;
+    margin: auto 0;
+}
+
+div.album {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none
+}
+.album img {
+    width: 100px;
+    height: auto;
+    box-shadow: 3px 3px red;
+}
+.album div#album-text {
+    margin: 0;
+    margin-left: 30px;
+}
+
+#musiklinks {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.musiklink {
+    display: block;
+    text-align: center;
+    min-width: 18%;
+    max-width: 25%;
+    padding: 12px;
+    border: 3px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.spotifylink {
+    background-color: black;
+    color: white;
+    border: 3px solid darkgreen;
+}
+.spotifylink:hover {
+    background-color: green;
+    text-decoration: underline;
+}
+.ytlink {
+    background-color: black;
+    color: white;
+    border: 3px solid darkred;
+}
+.ytlink:hover {
+    background-color: red;
+    text-decoration: underline;
+}
+.otherlink {
+    background-color: black;
+    color: white;
+    border: 3px solid darkorange;
+}
+.otherlink:hover {
+    background-color: orange;
+    text-decoration: underline;
+}
+
+#kontakt a {
+    display: block;
+    color: red;
+    margin-top: 20px;
+}
+#zeiten td {
+    text-align: center;
+}
+
+#footer {
+    width: 100%;
+    padding: 15px 200px;
+    background-color: #222;
+    color: #bbb;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 16pt;
+        margin: auto 0;
+        margin-right: 20px;
+    }
+    nav {
+        font-size: 11pt;
+    }
+    nav ul {
+        gap: 0;
+    }
+    nav ul li a {
+        font-size: 9pt;
+        padding: 20px 10px;
+        height: 100%;
+    }
+
+    #video-box {
+        display: none;
+    }
+
+    div#auftritte {
+        margin: 0;
+        width: 100vw;
+    }
+    div#about {
+        margin: 0;
+        width: 100vw;
+    }
+    div#musik {
+        margin: 0;
+        width: 100vw;
+    }
+
+    #header video {
+        height: auto;
+        width: 100%;
+    }
+    #header {
+        height: auto;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    #auftritte {
+        padding: 0;
+    }
+    table {
+        font-size: 11pt;
+    }
+    #auftritte th, #auftritte td {
+        padding: 0;
+    }
+
+    .mitglied {
+        padding: 0;
+    }
+
+    div.album {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+    div#album-text {
+        padding: 10px;
+        margin: 0;
+    }
+    .album a {
+        width: 100px;
+        height: 100px;
+    }
+
+    #kontakt {
+        padding: 0;
+        margin: 0;
+    }
+    #zeiten {
+        font-size: 7pt;
+    }
+
+    #footer {
+        padding: 20px 30px;
+    }
+}
